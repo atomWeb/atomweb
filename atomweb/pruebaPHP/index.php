@@ -1,0 +1,4 @@
+<?php
+	/*Prueba git*/
+	phpinfo();
+?>
