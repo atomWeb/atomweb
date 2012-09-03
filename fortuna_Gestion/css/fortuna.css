@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+ 
+#appLayout {
+    height: 100%;
+}
+#leftCol {
+    width: 135px;
+    background-color:#828282;
+}
+#leftCol ul { 
+	list-style-type:none;
+    margin: 0;
+    padding: 0; 
+}
+#leftCol ul li {
+	text-align: center;
+	vertical-align:bottom;
+    background-position: top center;
+    float: left;
+    padding-top:35px; 
+    width:135px;
+    height: 55px;
+    cursor:pointer;    
+}
+#leftCol ul li.inicio {
+    background-image:  url("../images/home_g.png"); 
+    background-repeat: no-repeat;
+}
+#leftCol ul li.inicio:hover {
+    background-image:  url("../images/home_c.png"); 
+    background-repeat: no-repeat; 
+}
+div.hidden {visibility:hidden}
+
+#leftCol ul li.config {
+    background-image:  url("../images/gear_g.png"); 
+    background-repeat: no-repeat; 
+}
+
+#leftCol ul li.config:hover {
+    background-image:  url("../images/gear_c.png"); 
+    background-repeat: no-repeat; 
+
+}
+#leftCol ul li.calendar {
+    background-image:  url("../images/calendar_g.png"); 
+    background-repeat: no-repeat; 
+}
+
+
+#leftCol ul li.prod {
+    background-image:  url("../images/prod_c.png"); 
+    background-repeat: no-repeat; 
+}
+
+#leftCol ul li.pres {
+    background-image:  url("../images/pres_c.png"); 
+    background-repeat: no-repeat; 
+}
+
+#leftCol ul li.calendar:hover {
+    background-image:  url("../images/calendar_c.png"); 
+    background-repeat: no-repeat; 
+
+}
+.fsombra{  
+	padding-top:10px;
+	display:block;
+	font-family:Arial,Helvetica,sans-serif;	
+	font-size:110%;		
+	color: #4D4D4D;
+	text-shadow: 0px 1px 1px #B3B3B3; 
+}
+
+#datos_ajax ul { list-style-type:none; margin:0; padding:0;}
+#datos_ajax ul li { background:#cbe4ff; padding:5px; border-radius:5px; margin-bottom:5px; cursor:pointer}
+#datos_ajax ul li.seleccionado { background:#61A2E9;}
+div.hidden {visibility:hidden}
+.EditIcon { 
+    background-image:  url("../images/edit_icon.png"); 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    width: 16px; 
+    height: 16px; 
+}
+.DeleteIcon { 
+    background-image:  url("../images/del_icon.png"); 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    width: 16px; 
+    height: 16px; 
+}
+.HistoryIcon { 
+    background-image:  url("../images/his_icon.png"); 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    width: 16px; 
+    height: 16px; 
+}
+.CalendarIcon { 
+    background-image:  url("../images/cal_icon.png"); 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    width: 16px; 
+    height: 16px; 
+} 

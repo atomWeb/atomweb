@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>.: Fortuna :.</title>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.8.0/dijit/themes/claro/claro.css">
+<link rel="stylesheet" href="./css/fortuna.css" media="screen">
+<!-- load Dojo -->
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.8.0/dojo/dojo.js"
+			data-dojo-config="isDebug: true, async: true, parseOnLoad: true">
+</script>
+<script>
+	require(["dijit/layout/BorderContainer", "dijit/layout/ContentPane", "dojo/parser"]);
+</script>
+<script type="text/javascript" src="./js/fortuna.js"></script>        
+</head>
+<body class="claro">
+<div
+        id="appLayout" class=""
+        data-dojo-type="dijit.layout.BorderContainer"
+        data-dojo-props="design: 'headline'">
+        <div
+            id="contenido"
+            class="centerPanel"
+            data-dojo-type="dijit.layout.ContentPane"
+            data-dojo-props="region: 'center'">             
+         	
+	         	<div id="mto" class="" style="visibility:hidden"
+				     data-dojo-type="dijit.layout.BorderContainer"
+					 data-dojo-props="design: 'headline'">
+				
+				     <div
+				          id="" class="edgePanel"
+				          data-dojo-type="dijit.layout.ContentPane"
+				          data-dojo-props="region: 'left', splitter: true">
+				          	<ul>
+				          		<li> Tabla 1</li>
+								<li> Tabla 2</li>
+								<li> Tabla ...</li>
+				          	</ul>
+				     </div>  
+				     
+					     <div
+				          id="" class="edgePanel"
+				          data-dojo-type="dijit.layout.ContentPane"
+				          data-dojo-props="region: 'center'">
+				          				          
+				          	<div id="datos_ajax"></div>
+							<div id="datos_formulario" class="hidden">
+								<form id="formNode">
+									<input type="text" id="idregistro" name="registro" value=""/>
+								</form>
+							</div>
+							<div id="datos_detalle"></div>
+							
+				     </div>  					 
+				</div>         	
+         	
+        </div>
+        <div
+           class="edgePanel"
+           data-dojo-type="dijit.layout.ContentPane"
+           data-dojo-props="region: 'top'">Aplicaci&oacute;n FORTUNA - Manuel Castillo.</div>
+        <div
+          id="leftCol" class="edgePanel"
+          data-dojo-type="dijit.layout.ContentPane"
+          data-dojo-props="region: 'left'">
+          	<ul>
+          		<li title="Inicio" class="inicio" onclick="alert('Inicio y password');"><span class="fsombra">Inicio</span></li>
+          		<li title="Productos" class="prod"><span class="fsombra">Productos</span></li>
+          		<li title="Citas" class="calendar"><span class="fsombra">Citas</span></li>
+          		<li title="Presupuesto" class="pres"><span class="fsombra">Presupuesto</span></li>
+          		<li title="Mantenimiento" class="config" onclick="datosAjax();"><span class="fsombra">Mantenimiento</span></li>
+          	</ul>
+        </div>
+</div>
+</body>
+</html>
